@@ -30,6 +30,7 @@
 
 # Motobox
 /vendor/bin/motobox    u:object_r:vendor_motobox_exec:s0
+/(vendor|system/vendor)/bin/nxpnfcinfo    u:object_r:vendor_nxpnfcinfo_exec:s0
 
 # Neural Networks
 /vendor/lib(64)?/libapusys\.so                                                         u:object_r:same_process_hal_file:s0
