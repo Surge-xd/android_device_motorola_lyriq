@@ -24,3 +24,6 @@ allow mtk_hal_camera system_data_file:dir search;
 
 # Camera stabilization uses the AIDL framework sensor manager for gyro data.
 allow mtk_hal_camera fwk_sensor_service:service_manager find;
+binder_call(mtk_hal_camera, system_server)
+binder_call(system_server, mtk_hal_camera)
+allow mtk_hal_camera system_server:fd use;
