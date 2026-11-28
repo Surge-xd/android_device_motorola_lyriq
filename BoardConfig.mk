@@ -42,8 +42,6 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/mot_aids.fs
 
-# Graphics
-TARGET_USES_VULKAN := true
 
 # Kernel
 BOARD_KERNEL_BASE := 0x40078000
